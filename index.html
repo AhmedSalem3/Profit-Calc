@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./tip-calculator-app-main/images/favicon-32x32.png">
+    <title>Tip Calculator App</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- START CALC -->
+    <div class="calc-holder">
+        <div class="container">
+            <div class="calc">
+                <form action="">
+                    <label for="bought-amount">
+                        <p class="input-text">Amount Bought</p>
+                        <input type="number" class="bought" id="bought-amount">
+                    </label>
+
+                    <label for="past">
+                        <p class="input-text">Price/Unit <span>$</span></p>
+                        <input type="number" class="past-price" id="past">
+                    </label>
+
+                    <label for="percentage-change">
+                        <p class="input-text">Percentage Difference</p>
+                        <div class="input-wrapper">
+                            <input type="number" class="changed-by" id="percentage-change">
+                            <span>%</span>
+                        </div>
+                    </label>
+
+                </form>
+                <div class="final">
+                    <div class="sec">
+                        <p class="result-title status">Profit</p>
+                        <span class="profit result">0.00</span>
+                    </div>
+
+                    <div class="sec">
+                        <p class="result-title">Total Outcome</p>
+                        <span class="total-outcome result">0.00</span>
+                    </div>
+
+                    <input type="submit" value="Calculate">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END CALC -->
+
+    <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX" class="challenge">Frontend
+        Mentor Challange</a>
+    <style>
+        a.challenge {
+
+            display: inline-flex;
+            font-size: 1.2rem;
+            color: #fff;
+            width: 100%;
+            background: #000;
+            padding: 10px;
+
+
+        }
+    </style>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
